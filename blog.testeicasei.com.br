@@ -1,0 +1,14 @@
+#WORDPRESS
+<VirtualHost *:80>
+	ServerName blog.testeicasei.com.br
+#	ServerAlias blog.testeicasei.com.br
+	DocumentRoot /sites/wordpress/
+	
+	<Directory /sites/wordpress/>
+		Options Indexes FollowSymLinks MultiViews
+                AllowOverride all
+                DirectoryIndex index.php index.html
+                Order allow,deny
+                allow from all
+	 </Directory>
+</VirtualHost>
